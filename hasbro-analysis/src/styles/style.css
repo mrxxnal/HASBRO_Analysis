@@ -1,39 +1,20 @@
 /* 🌟 Import Fun Font */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Bungee&family=Fredoka+One&display=swap');
 
-
 /* 🌟 General Styling */
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
     font-family: 'Bungee', sans-serif;
     overflow-x: hidden;
-    background: #43aeff; /* Slightly lighter blue */
-    background-attachment: fixed; /* Keeps background in place while scrolling */
-    background-size: cover;
-    position: relative;
+    background-color: #43aeff; /* Slightly lighter blue */
 }
 
-
-/* 🌟 Logo Styling */
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo-img {
-    height: 60px; /* Adjust size as needed */
-    margin-right: 20px; /* Space between logo and text */
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    font-family: 'Press Start 2P', cursive;
-    color: #F8B400; /* Playful Yellow */
-}
-
+/* 🌟 Navbar */
 .navbar {
     background: #006de2; /* Hasbro Blue */
     display: flex;
@@ -48,16 +29,55 @@ body {
     z-index: 1000;
 }
 
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    color: #E71D36; /* Energetic Red */
+}
+
+/* 🌟 Logo Styling */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 60px;
+    margin-right: 15px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    color: #F8B400; /* Playful Yellow */
+}
+
 /* 🌟 Hero Section */
 .hero {
     height: 80vh;
-    background: #43aeff; /* Slightly lighter blue */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
+    margin-top: 80px; /* Push down to avoid overlap with navbar */
 }
 
 .hero h1 {
