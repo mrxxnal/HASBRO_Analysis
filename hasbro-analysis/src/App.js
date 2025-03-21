@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import MarqueeText from "./components/marqueetext";
@@ -9,15 +9,15 @@ import "./styles/style.css"; // Ensure correct path
 
 function App() {
   return (
-    <Router>
+    <>
       <Navbar />
-      <MarqueeText /> {/* 🔥 This stays on all pages! */}
-      
+      <MarqueeText />
+
       <Routes>
         <Route path="/" element={<Hero />} />
         <Route path="/data" element={<DataAnalytics />} />
       </Routes>
-    </Router>
+    </>
   );
 }
 
