@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // ✅ Import Link
 import "../styles/style.css";
 import hasbroLogo from "../assets/hasbro_logo.png"; // Ensure correct path
 
@@ -10,11 +11,11 @@ const Navbar = () => {
         <span className="logo">Hasbro Analysis</span>
       </div>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About Hasbro</a></li>
-        <li><a href="/data">Data Analytics</a></li>
-        <li><a href="/trending">Top Trending</a></li>
-        <li><a href="/buy">Where to Buy</a></li>
+        <li><Link to="/">Home</Link></li>           {/* ✅ Link to slash */}
+        <li><Link to="/about">About Hasbro</Link></li>
+        <li><Link to="/data">Data Analytics</Link></li>
+        <li><Link to="/trending">Top Trending</Link></li>
+        <li><Link to="/buy">Where to Buy</Link></li>
       </ul>
     </nav>
   );
