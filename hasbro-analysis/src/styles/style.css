@@ -70,7 +70,7 @@ body {
 
 /* 🌟 Hero Section */
 .hero {
-    height: 80vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,6 +90,9 @@ body {
 .hero p {
     font-size: 20px;
     margin-bottom: 30px;
+    max-width: 1200px; /* Ensures text doesn’t stretch too wide */
+    line-height: 1.5; /* Better readability */
+    padding: 0 20px; /* Side padding */
 }
 
 /* 🌟 Call-To-Action Button */
@@ -106,34 +109,66 @@ body {
 }
 
 .cta-btn:hover {
-    background: #FFD166;
+    background: #ff7f16;
     transform: scale(1.1);
 }
 
-/* 🔥 Marquee Styling */
-.marquee {
+/* 🌟 Marquee Effect */
+.marquee-container {
     width: 100%;
     overflow: hidden;
-    white-space: nowrap;
-    background: #f8b400; /* Playful Yellow */
-    color: #1D1D1D;
-    font-size: 18px;
-    font-weight: bold;
+    position: fixed; /* Stays at the top */
+    top: 100px; /* Right below navbar */
+    left: 0;
+    background: #47698b; /* Hasbro Blue */
     padding: 10px 0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
 }
 
-.marquee-content {
+.marquee-text {
     display: inline-block;
     white-space: nowrap;
-    padding-left: 100%;
-    animation: scrollText 20s linear infinite;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    animation: marqueeScroll 25s linear infinite;
 }
 
-/* Marquee Animation */
-@keyframes scrollText {
+/* 🌟 Data Analytics Page */
+.analytics-container {
+    padding: 180px 20px;
+    text-align: center;
+    color: white;
+}
+
+.analytics-container h1 {
+    font-size: 40px;
+    font-family: 'Fredoka One', sans-serif;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.analytics-container p {
+    font-size: 18px;
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    line-height: 1.5;
+}
+
+.data-visuals {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* 🌟 Keyframes for Smooth Scrolling */
+@keyframes marqueeScroll {
     from {
-        transform: translateX(100%);
+        transform: translateX(100vw);
     }
     to {
         transform: translateX(-100%);
