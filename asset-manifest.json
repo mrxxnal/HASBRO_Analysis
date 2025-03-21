@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/HASBRO_Analysis/static/css/main.aac9b9ec.css",
+    "main.js": "/HASBRO_Analysis/static/js/main.c9e2a1ac.js",
+    "static/media/hasbro_logo.png": "/HASBRO_Analysis/static/media/hasbro_logo.cbb1ab21131d541e3db4.png",
+    "index.html": "/HASBRO_Analysis/index.html",
+    "main.aac9b9ec.css.map": "/HASBRO_Analysis/static/css/main.aac9b9ec.css.map",
+    "main.c9e2a1ac.js.map": "/HASBRO_Analysis/static/js/main.c9e2a1ac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aac9b9ec.css",
+    "static/js/main.c9e2a1ac.js"
+  ]
+}
