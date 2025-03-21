@@ -4,7 +4,6 @@ import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import MarqueeText from "./components/marqueetext";
 import DataAnalytics from "./pages/data"; // Import the Data Analytics page
-import Home from "./pages/home"; // Make sure you have this!
 
 import "./styles/style.css"; // Ensure correct path
 

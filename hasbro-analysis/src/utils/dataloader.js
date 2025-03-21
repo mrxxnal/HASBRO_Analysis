@@ -1,11 +1,13 @@
 import * as d3 from "d3";
 
 export async function loadData() {
-  const data = await d3.csv("/amazon__hasbro_products.csv");
+  // This path is correct only if the CSV is in public/
+  const data = await d3.csv("/amazon_hasbro_products.csv");
+  console.log("CSV Data Loaded:", data); // For debugging
   return data.map((d) => ({
     title: d.Title,
-    price: parseFloat(d["Price ($)"]) || 0,
-    rating: parseFloat(d.Rating) || null,
+    price: d["Price ($)"],
+    rating: d.Rating,
     brand: d.Brand,
   }));
 }
