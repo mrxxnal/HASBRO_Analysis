@@ -1,6 +1,7 @@
 /* 🌟 Import Fun Font */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Bungee&family=Fredoka+One&display=swap');
 
+
 /* 🌟 General Styling */
 body {
     margin: 0;
@@ -8,18 +9,12 @@ body {
     box-sizing: border-box;
     font-family: 'Bungee', sans-serif;
     overflow-x: hidden;
-    background: linear-gradient(to right, #0078CE, #00A8E8);
+    background: #43aeff; /* Slightly lighter blue */
     background-attachment: fixed; /* Keeps background in place while scrolling */
     background-size: cover;
     position: relative;
 }
 
-
-/* 🌟 Remove White Space */
-html, body {
-    height: 100%;
-    overflow: hidden; /* Prevents unnecessary scrolling */
-}
 
 /* 🌟 Logo Styling */
 .logo-container {
@@ -41,11 +36,18 @@ html, body {
 
 /* 🌟 Navigation Bar */
 nav {
-    background: #0078CE; /* Hasbro Blue */
+    background: #006de2; /* Hasbro Blue */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding-top: 50px; /* Adjust this based on your nav height */
+    padding: 20px 20px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3); /* Soft bottom shadow */
+    position: fixed; /* Makes nav bar stay at the top */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
 nav .logo {
@@ -61,7 +63,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
@@ -77,8 +79,8 @@ nav ul li a:hover {
 
 /* 🌟 Hero Section */
 .hero {
-    height: 50vh;
-    background: linear-gradient(to right, #0078CE, #00A8E8);
+    height: 80vh;
+    background: #43aeff; /* Slightly lighter blue */
     display: flex;
     flex-direction: column;
     align-items: center;
